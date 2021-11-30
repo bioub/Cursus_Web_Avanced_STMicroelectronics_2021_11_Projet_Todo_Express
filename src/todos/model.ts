@@ -24,7 +24,9 @@ export class TodoArrayService {
 
   // retourne le prochain id
   nextId() {
-    return this.todos.reduce((acc, t) => t.id ?? 0 > acc ? t.id ?? 0 : acc, 0) + 1;
+    return (
+      this.todos.reduce((acc, t) => (t.id ?? 0 > acc ? t.id ?? 0 : acc), 0) + 1
+    );
   }
 
   create(todoDto: Todo): Promise<Todo> {

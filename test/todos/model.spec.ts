@@ -36,7 +36,7 @@ describe('TodoArrayService class', () => {
   // Méthode create
   describe('method create', () => {
     it('should return number of completed todos', async () => {
-      const todoToCreate = {title: 'XYZ', completed: false}
+      const todoToCreate = { title: 'XYZ', completed: false };
       const newTodo = await service.create(todoToCreate);
 
       // Vérifier que la fonction create resolve un nouvel objet todo

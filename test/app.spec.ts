@@ -16,13 +16,14 @@ describe('functional tests', () => {
         .once()
         .resolves([{ id: 1, title: 'ABC', completed: true }]);
 
-      const res = await chai.request(app)
-        .get('/todos');
+      const res = await chai.request(app).get('/todos');
 
       expect(res).to.have.status(200);
-      expect(res.body).to.deep.equal([{ id: 1, title: 'ABC', completed: true }]);
+      expect(res.body).to.deep.equal([
+        { id: 1, title: 'ABC', completed: true },
+      ]);
 
       mock.verify();
     });
   });
-})
+});
