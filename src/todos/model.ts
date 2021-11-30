@@ -12,6 +12,7 @@ export class TodoArrayService {
       title: 'XYZ',
       completed: false,
     },
+    { id: 3, title: 'DEF', completed: false },
   ];
 
   static countCompleted(inputTodos: Todo[]) {
