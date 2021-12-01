@@ -7,7 +7,7 @@ function hello(name: string) {
 }
 
 describe('hello function', () => {
-  beforeEach(() => {}); // avant chaque it
+  // beforeEach(() => {}); // avant chaque it
   it('should return Hello followed by name', () => {
     expect(hello('Romain')).to.equal('Hello Romain');
   });

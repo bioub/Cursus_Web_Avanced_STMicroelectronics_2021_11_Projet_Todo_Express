@@ -1,7 +1,7 @@
-import chaiHttp from 'chai-http';
 import chai, { expect } from 'chai';
-import { app } from '../src/app';
+import chaiHttp from 'chai-http';
 import sinon from 'sinon';
+import { app } from '../src/app';
 import model from '../src/todos/model-mongoose';
 
 chai.use(chaiHttp);

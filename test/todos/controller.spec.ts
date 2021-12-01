@@ -1,7 +1,7 @@
-import { todoDeleteCtrl, todoListCtrl } from '../../src/todos/controllers';
+import { expect, use } from 'chai';
 import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
-import { expect, use } from 'chai';
+import { todoDeleteCtrl, todoListCtrl } from '../../src/todos/controllers';
 import model from '../../src/todos/model-mongoose';
 
 use(sinonChai);

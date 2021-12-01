@@ -1,5 +1,5 @@
-import { todoAddCtrl, todoDeleteCtrl, todoListCtrl } from './controllers';
 import express, { Router } from 'express';
+import { todoAddCtrl, todoDeleteCtrl, todoListCtrl } from './controllers';
 
 const todosRoutes = Router();
 

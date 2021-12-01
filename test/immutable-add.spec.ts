@@ -14,12 +14,12 @@ function immutableAdd<V = any, O = any>(
 interface Todo {
   id?: number;
   title: string;
-  completed: false;
+  completed: boolean;
 }
 
 describe('immutableAdd function', () => {
   it('should add key be creating a new object', () => {
-    const todo = {
+    const todo: Todo = {
       title: 'ABC',
       completed: true,
     };
