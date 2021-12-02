@@ -2,6 +2,7 @@ import { expect } from 'chai';
 import sinon, { SinonFakeTimers } from 'sinon';
 
 function httpClient(url: string) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const data: any = {
     '/users': [
       { id: 1, name: 'A' },

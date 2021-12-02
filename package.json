@@ -34,8 +34,7 @@
     "coverage": "nyc npm run test",
     "prepare": "husky install",
     "format": "prettier --write \"**/*.{json,ts}\"",
-    "lint": "eslint {src,test} --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint {src,test} --ext .js,.jsx,.ts,.tsx --fix"
+    "lint": "eslint {src,test} --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "cors": "^2.8.5",
